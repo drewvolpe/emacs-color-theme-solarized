@@ -96,8 +96,9 @@ will use the 256 degraded color mode."
         (rotatef base00 base0))
       `((;; basic
          (default ((t (:foreground ,base0 ,:background ,base03))))
-         (cursor
-          ((t (:foreground ,base0 :background ,base03 :inverse-video t))))
+	 ;; turned off cursor changing colors. DV$$$
+         ;;  (cursor
+         ;; ((t (:foreground ,base0 :background ,base03 :inverse-video t))))
          (escape-glyph-face ((t (:foreground ,red))))
          (fringe ((t (:foreground ,base01 :background ,base02))))
          (linum ((t (:foreground ,base01 :background ,base02))))
